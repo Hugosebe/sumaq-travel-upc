@@ -1,7 +1,11 @@
 # Sumaq Way Travel — Explorador de paquetes turísticos
 
 Proyecto final UPC · **Hugo Serrano**  
-Curso, sección, docente e integrantes adicionales: pendientes de confirmar.
+**Curso:** Inteligencia Artificial  
+**Docente:** Lennin Percy Cenas Vasquez  
+**Modalidad:** Individual  
+**Fecha de entrega:** 24 de octubre de 2026  
+**Sección:** pendiente de indicar.
 
 > Versión académica independiente basada en el catálogo de Sumaq Way Travel V45. No modifica ni sustituye el sitio comercial. El código está publicado en GitHub y la aplicación está disponible en GitHub Pages. La evidencia real de Copilot y el video siguen pendientes.
 
@@ -68,7 +72,7 @@ Con Node.js 18 o posterior, desde la raíz:
 node --test tests/catalog.test.cjs
 ```
 
-Verifica búsquedas con tildes, filtros combinados, casos vacíos, inyección de HTML, codificación del mensaje, unicidad e integridad del catálogo. La lista de pruebas de interfaz está en `guia/PRUEBAS_MANUALES.md`. Los resultados entregados son locales; no prueban una publicación pública todavía.
+Verifica búsquedas con tildes, filtros combinados, casos vacíos, inyección de HTML, codificación del mensaje, unicidad e integridad del catálogo. La lista de pruebas de interfaz está en `guia/PRUEBAS_MANUALES.md`. Las pruebas automatizadas se ejecutaron localmente; adicionalmente se verificó la aplicación publicada en GitHub Pages.
 
 ## GitHub Pages
 
