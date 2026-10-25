@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumaq Way Travel | Explora tu próximo viaje</title>
+<meta name="description" content="Explorador académico de paquetes turísticos nacionales e internacionales de Sumaq Way Travel.">
+<link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="css/styles.css">
+<script defer src="js/catalog.js"></script><script defer src="js/core.js"></script><script defer src="js/app.js"></script>
+</head>
+<body>
+<header class="header"><a class="brand" href="index.html"><img src="assets/logo.png" alt="Sumaq Way Travel" width="64" height="64"><span>SUMAQ WAY<small>TRAVEL</small></span></a><a class="navlink" href="#catalogo">Explorar destinos <span aria-hidden="true">↗</span></a></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">EXPLORADOR DE VIAJES · PROYECTO UPC</span><h1>Tu próximo viaje<br>empieza con una idea.</h1><p>De los Andes al Caribe. Encuentra un destino, conoce el programa y cuéntanos cómo te gustaría viajar.</p><a class="button light" href="#catalogo">Encuentra tu destino <span aria-hidden="true">↓</span></a><span class="hero-note">Información clara, a tu ritmo.</span></div><img class="hero-photo" src="assets/destinos/machu-picchu.jpg" alt="Ciudadela de Machu Picchu entre montañas" fetchpriority="high"><div class="hero-caption">Machu Picchu, Perú</div></section>
+<section class="catalog-section" id="catalogo" aria-labelledby="catalog-title"><div class="section-heading"><div><span class="eyebrow">¿A DÓNDE NOS VAMOS?</span><h2 id="catalog-title">Un lugar para cada aventura.</h2></div><p>Selecciona un viaje para conocer sus detalles.</p></div>
+<form id="filters" class="filters" role="search"><div><label for="search">Destino o país</label><input id="search" type="search" placeholder="Prueba: Cusco, Perú o Madrid" autocomplete="off"></div><div><label for="category">Tipo de viaje</label><select id="category"><option value="">Todos los viajes</option><option>Nacionales</option><option>Internacionales</option></select></div><button class="button secondary" id="reset" type="button">Limpiar filtros</button></form>
+<p id="result-count" class="result-count" role="status" aria-live="polite"></p>
+<div class="cards" id="cards"></div><div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h3>No encontramos ese destino.</h3><p>Prueba otro nombre o limpia los filtros para volver a explorar.</p><button class="button secondary" id="empty-reset" type="button">Ver todos los viajes</button></div>
+<noscript><p class="notice">Activa JavaScript para buscar destinos y consultar las fichas.</p></noscript>
+</section>
+<section class="closing"><span class="eyebrow">VIAJAMOS CONTIGO</span><h2>Primero te imaginas el viaje.<br>Después lo organizamos contigo.</h2><p>Este catálogo muestra programas de referencia. Los servicios, fechas y disponibilidad se confirman antes de reservar.</p></section>
+</main>
+<footer><div><strong>Sumaq Way Travel</strong><p>Adaptación académica · Hugo Serrano · UPC</p></div><a href="creditos.html">Fuentes de las fotografías</a></footer>
+<dialog id="package-dialog" aria-labelledby="detail-title"><button id="close-dialog" class="close-dialog" type="button" aria-label="Cerrar detalle del paquete">×</button><div id="detail"></div></dialog>
+</body></html>

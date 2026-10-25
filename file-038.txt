@@ -1,0 +1,20 @@
+✔ normaliza tildes, mayúsculas y espacios (1.846566ms)
+✔ búsqueda sin tilde encuentra el país Perú (0.513543ms)
+✔ filtro por categoría distingue nacionales e internacionales (0.367762ms)
+✔ combina búsqueda con categoría sin falsos positivos (0.15738ms)
+✔ consulta desconocida no devuelve resultados (0.332941ms)
+✔ consulta vacía y espacios conservan catálogo completo (1.20932ms)
+✔ los filtros no modifican el catálogo de origen (0.560695ms)
+✔ escapa contenido antes de insertarlo como HTML (0.478792ms)
+✔ WhatsApp codifica el nombre y mantiene destinatario correcto (1.011348ms)
+✔ IDs únicos y estructura suficiente para cada ficha (0.422613ms)
+✔ todas las fotografías locales están disponibles (0.347901ms)
+✔ RED Madrid conserva 17 pasos y su portada es una fotografía (1.29407ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144.814278
