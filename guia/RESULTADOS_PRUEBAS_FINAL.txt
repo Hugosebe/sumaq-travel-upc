@@ -1,0 +1,24 @@
+Ejecución posterior con Codex; no ejecutada por Copilot.
+✔ normaliza tildes, mayúsculas y espacios (1.25001ms)
+✔ búsqueda sin tilde encuentra el país Perú (0.370603ms)
+✔ filtro por categoría distingue nacionales e internacionales (0.218676ms)
+✔ combina búsqueda con categoría sin falsos positivos (0.153079ms)
+✔ consulta desconocida no devuelve resultados (0.267673ms)
+✔ consulta vacía y espacios conservan catálogo completo (0.117022ms)
+✔ los filtros no modifican el catálogo de origen (0.299384ms)
+✔ orden original conserva el orden del catálogo y devuelve una copia (0.853924ms)
+✔ orden A–Z compara nombres sin distinguir tildes ni mayúsculas (8.008537ms)
+✔ combina búsqueda y categoría con orden A–Z sin modificar el catálogo (1.390547ms)
+✔ escapa contenido antes de insertarlo como HTML (0.257209ms)
+✔ WhatsApp codifica el nombre y mantiene destinatario correcto (0.261351ms)
+✔ IDs únicos y estructura suficiente para cada ficha (0.184292ms)
+✔ todas las fotografías locales están disponibles (0.569072ms)
+✔ RED Madrid conserva 17 pasos y su portada es una fotografía (0.300064ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 138.223147

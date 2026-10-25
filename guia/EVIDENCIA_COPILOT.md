@@ -1,30 +1,23 @@
-# Registro real de GitHub Copilot
+# Evidencia real de GitHub Copilot
 
-Estado: **pendiente de completar por Hugo**. No borrar este estado hasta tener evidencia real.
+Estudiante: Hugo Serrano. Curso: Inteligencia Artificial. Docente: Lennin Percy Cenas Vasquez. Trabajo individual.
 
-Cuenta institucional utilizada: pendiente (no publicar correo privado si no es necesario).  
-Plan y entorno: pendiente.  
-Fecha de trabajo: pendiente.
+## Solicitud utilizada en VS Code
 
-| Actividad | Prompt o captura | Sugerencia real de Copilot | Decisión propia y motivo | Archivo/commit | Resultado de prueba |
-| --- | --- | --- | --- | --- | --- |
-| Análisis | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
-| Implementación | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
-| Corrección/refactor | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
-| Documentación | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
+> Revisa docs/js/core.js, docs/js/app.js y docs/index.html. Explícame brevemente cómo funcionan la búsqueda y los filtros.
+>
+> Después agrega un selector “Ordenar por” con dos opciones: “Orden original” y “Nombre A–Z”.
+>
+> Debe funcionar junto con la búsqueda y los filtros, sin modificar el catálogo original. Conserva el diseño responsive y no agregues dependencias.
+>
+> Implementa la mejora, agrega las pruebas correspondientes y explícame qué cambiaste. Si no puedes ejecutar las pruebas, indícalo.
 
-## Apoyo recibido
+## Resultado y decisiones
 
-Completar en primera persona después de realizar las actividades. Diferenciar la base previa preparada con ChatGPT/Codex de los cambios hechos con Copilot.
+Copilot entregó cambios en cinco archivos y tres pruebas nuevas. Se conservaron la función pura que copia antes de ordenar, el selector con etiqueta accesible y el ordenamiento posterior a los filtros. Se mantuvo la estructura estática sin nuevas dependencias. La base anterior fue preparada con ChatGPT/Codex; no se atribuye a Copilot.
 
-## Sugerencia aceptada
+La captura muestra “Madrid”, categoría “Internacionales”, orden “Nombre A–Z” y dos resultados. Copilot reporta comprobaciones de interfaz a 390, 768 y 1280 px, y aclara que Node no estaba disponible para ejecutar pruebas. La revisión posterior con Codex ejecutó las 15 pruebas y todas pasaron.
 
-Qué propuso, qué revisé, por qué la acepté y cómo lo comprobé: pendiente.
+![Respuesta real y mejora en VS Code](../evidencias/copilot-vscode.png)
 
-## Sugerencia modificada o descartada
-
-Registrar solo si ocurrió. No inventar un rechazo para llenar la tabla. Si todo fue aceptado, describir una comprobación crítica y su resultado real.
-
-## Limitaciones de licencia
-
-Indicar qué funcionalidades del workshop no estaban disponibles y qué alternativa se usó. Si no hubo limitaciones observadas, indicar ese hecho.
+Archivos: docs/index.html, docs/css/styles.css, docs/js/core.js, docs/js/app.js y tests/catalog.test.cjs.

@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
-const {normalize, filterPackages, escapeHTML, whatsappURL} = require('../docs/js/core.js');
+const {normalize, filterPackages, sortPackages, escapeHTML, whatsappURL} = require('../docs/js/core.js');
 const context = {window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../docs/js/catalog.js'),'utf8'),context);
 const catalog = JSON.parse(JSON.stringify(context.window.SUMAQ_CATALOG));
@@ -22,6 +22,22 @@ test('consulta desconocida no devuelve resultados',()=>assert.equal(filterPackag
 test('consulta vacía y espacios conservan catálogo completo',()=>assert.equal(filterPackages(catalog,'   ').length,12));
 test('los filtros no modifican el catálogo de origen',()=>{
  const original=JSON.stringify(catalog);filterPackages(catalog,'Peru','Nacionales');assert.equal(JSON.stringify(catalog),original);
+});
+test('orden original conserva el orden del catálogo y devuelve una copia',()=>{
+ const result=sortPackages(catalog,'original');
+ assert.deepEqual(result.map(p=>p.id),catalog.map(p=>p.id));
+ assert.notEqual(result,catalog);
+});
+test('orden A–Z compara nombres sin distinguir tildes ni mayúsculas',()=>{
+ const names=['Zulu','Árbol','beta','ALAMO'];
+ const result=sortPackages(names.map(nombre=>({nombre})),'name-az').map(p=>p.nombre);
+ assert.deepEqual(result,['ALAMO','Árbol','beta','Zulu']);
+});
+test('combina búsqueda y categoría con orden A–Z sin modificar el catálogo',()=>{
+ const original=JSON.stringify(catalog);
+ const result=sortPackages(filterPackages(catalog,'Perú','Nacionales'),'name-az');
+ assert.deepEqual(result.map(p=>p.nombre),['Arequipa + Colca','Machu Picchu','Paracas + Ica','Puno + Lago Titicaca']);
+ assert.equal(JSON.stringify(catalog),original);
 });
 test('escapa contenido antes de insertarlo como HTML',()=>assert.equal(escapeHTML('<script>"&\'</script>'),'&lt;script&gt;&quot;&amp;&#39;&lt;/script&gt;'));
 test('WhatsApp codifica el nombre y mantiene destinatario correcto',()=>{

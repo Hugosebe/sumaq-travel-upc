@@ -2,15 +2,16 @@
 (() => {
   'use strict';
   const catalog = window.SUMAQ_CATALOG;
-  const {filterPackages, escapeHTML: esc, whatsappURL} = window.SumaqCore;
+  const {filterPackages, sortPackages, escapeHTML: esc, whatsappURL} = window.SumaqCore;
   const search = document.getElementById('search');
   const category = document.getElementById('category');
+  const sort = document.getElementById('sort');
   const cards = document.getElementById('cards');
   const dialog = document.getElementById('package-dialog');
   let opener = null;
 
   function renderCatalog() {
-    const matches = filterPackages(catalog, search.value, category.value);
+    const matches = sortPackages(filterPackages(catalog, search.value, category.value), sort.value);
     cards.innerHTML = matches.map(item => `<article class="card"><img src="${esc(item.imagen)}" alt="${esc(item.nombre)}" loading="lazy" width="640" height="420"><div class="card-copy"><span class="card-country">${esc(item.pais)}</span><h3>${esc(item.nombre)}</h3><p class="duration"><span aria-hidden="true">◷</span> ${esc(item.duracion)}</p><p>${esc(item.descripcion)}</p><button class="button detail-button" type="button" data-id="${esc(item.id)}" aria-label="Ver programa de ${esc(item.nombre)}">Ver programa <span aria-hidden="true">↗</span></button></div></article>`).join('');
     document.getElementById('result-count').textContent = `${matches.length} ${matches.length === 1 ? 'viaje para explorar' : 'viajes para explorar'}`;
     document.getElementById('empty').hidden = matches.length !== 0;
@@ -33,6 +34,7 @@
   document.getElementById('filters').addEventListener('submit', event => event.preventDefault());
   search.addEventListener('input', renderCatalog);
   category.addEventListener('change', renderCatalog);
+  sort.addEventListener('change', renderCatalog);
   document.getElementById('reset').addEventListener('click', resetFilters);
   document.getElementById('empty-reset').addEventListener('click', resetFilters);
   document.getElementById('close-dialog').addEventListener('click', () => dialog.close());

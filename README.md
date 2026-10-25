@@ -5,9 +5,8 @@ Proyecto final UPC · **Hugo Serrano**
 **Docente:** Lennin Percy Cenas Vasquez  
 **Modalidad:** Individual  
 **Fecha de entrega:** 24 de octubre de 2026  
-**Sección:** pendiente de indicar.
 
-> Versión académica independiente basada en el catálogo de Sumaq Way Travel V45. No modifica ni sustituye el sitio comercial. El código está publicado en GitHub y la aplicación está disponible en GitHub Pages. La evidencia real de Copilot y el video siguen pendientes.
+> Versión académica independiente basada en el catálogo de Sumaq Way Travel V45. No modifica ni sustituye el sitio comercial. El código está publicado en GitHub y la aplicación está disponible en GitHub Pages. La mejora de ordenamiento se realizó con GitHub Copilot en VS Code. El video demostrativo está pendiente.
 
 ## Problemática
 
@@ -31,6 +30,7 @@ Facilitar la búsqueda y consulta de paquetes mediante un catálogo web que reú
 6. Abrir WhatsApp con un mensaje que identifica el programa. La aplicación no envía mensajes automáticamente.
 7. Recibir indicación clara cuando no existen resultados.
 8. Usar el catálogo con teclado y desde pantallas pequeñas.
+9. Ordenar por nombre A–Z o recuperar el orden original, junto con la búsqueda y la categoría.
 
 Las fotografías ilustran el destino. No se asignan fotos arbitrarias a traslados o días numerados. El catálogo no confirma cupos, hoteles ni disponibilidad real.
 
@@ -78,13 +78,17 @@ Verifica búsquedas con tildes, filtros combinados, casos vacíos, inyección de
 
 La aplicación usa rutas relativas y archivos estáticos. Publicar la rama `main`, carpeta **`/docs`**, siguiendo `guia/PUBLICACION.md`. No agregues `CNAME` ni uses el dominio comercial: esta es una entrega académica independiente.
 
-## Uso de GitHub Copilot — estado honesto
+## Uso de GitHub Copilot
 
-Esta base se preparó con ayuda de ChatGPT/Codex a partir del proyecto existente. **Todavía no constituye evidencia de uso de GitHub Copilot.**
+La base se preparó con ChatGPT/Codex. Posteriormente Hugo utilizó **GitHub Copilot en VS Code** para analizar la búsqueda y los filtros e implementar el selector “Ordenar por”.
 
-El estudiante debe ejecutar las actividades de `guia/COPILOT.md` en VS Code con su cuenta institucional: analizar, realizar una mejora real, probarla y documentar sus decisiones. Se incluyen prompts y una plantilla vacía; no se han inventado conversaciones, capturas ni contribuciones de Copilot.
+Copilot modificó cinco archivos: HTML, estilos, lógica de interfaz, funciones puras y pruebas. Su función `sortPackages` copia el arreglo antes de ordenar y usa comparación en español sobre nombres normalizados. La interfaz aplica primero los filtros y después el orden seleccionado.
 
-Al completar las actividades, agregar capturas a `evidencias/`, actualizar `guia/EVIDENCIA_COPILOT.md` y describir aquí los cambios realmente realizados.
+La solicitud del estudiante estableció conservar el catálogo original, combinar búsqueda y categoría, mantener el diseño responsive y evitar dependencias. La revisión posterior conservó esta solución. “Limpiar filtros” borra búsqueda y categoría y conserva la preferencia de orden; “Orden original” permite recuperarlo explícitamente.
+
+Copilot informó que revisó el navegador a 390, 768 y 1280 px; no pudo ejecutar las pruebas en Windows porque Node no estaba disponible. **La revisión posterior con Codex ejecutó las 15 pruebas con resultado satisfactorio**, incluidas tres nuevas de ordenamiento. No se atribuye esa ejecución a Copilot.
+
+Véase [la evidencia y el prompt](guia/EVIDENCIA_COPILOT.md) y [la captura real](evidencias/copilot-vscode.png).
 
 ## Alcance y limitaciones
 
