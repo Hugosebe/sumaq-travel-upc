@@ -3,7 +3,7 @@
 Proyecto final UPC · **Hugo Serrano**  
 Curso, sección, docente e integrantes adicionales: pendientes de confirmar.
 
-> Versión académica independiente basada en el catálogo de Sumaq Way Travel V45. No modifica ni sustituye el sitio comercial. El código está preparado y probado localmente; publicación y evidencia real de Copilot aún pendientes.
+> Versión académica independiente basada en el catálogo de Sumaq Way Travel V45. No modifica ni sustituye el sitio comercial. El código está publicado en GitHub y la aplicación está disponible en GitHub Pages. La evidencia real de Copilot y el video siguen pendientes.
 
 ## Problemática
 
@@ -90,8 +90,8 @@ No procesa pagos, reservas ni formularios de correo. No incluye autenticación, 
 
 | Entregable | Enlace | Estado |
 | --- | --- | --- |
-| Repositorio público | Pendiente | No creado aún en la cuenta UPC |
-| Aplicación en GitHub Pages | Pendiente | No publicada |
+| Repositorio público | https://github.com/Hugosebe/sumaq-travel-upc | Público |
+| Aplicación en GitHub Pages | https://hugosebe.github.io/sumaq-travel-upc/ | Publicada y comprobada |
 | Video de máximo 1 minuto | Pendiente | Debe grabarlo el estudiante |
 
 No presentar estos campos como terminados hasta comprobar cada enlace en una ventana sin sesión.

@@ -1,6 +1,6 @@
 # Publicar el repositorio y GitHub Pages
 
-No se ha creado todavía un repositorio ni una publicación en la cuenta del estudiante. No se cambia el dominio comercial de Sumaq.
+Publicación realizada en **Hugosebe**. Repositorio: https://github.com/Hugosebe/sumaq-travel-upc. Aplicación: https://hugosebe.github.io/sumaq-travel-upc/. Los pasos siguientes quedan como guía para futuras actualizaciones. No se cambia el dominio comercial de Sumaq.
 
 ## Acceso
 

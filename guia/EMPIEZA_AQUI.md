@@ -12,7 +12,7 @@
 1. Usuario o enlace de tu perfil de GitHub asociado a UPC. No contraseña ni códigos.
 2. Nombre del curso, sección, docente, integrantes y fecha límite.
 3. Confirmar si VS Code, Git y Copilot ya funcionan; indicar Free o Pro, o enviar captura del estado ocultando datos privados.
-4. Conectar GitHub si quieres que continuemos la creación y publicación desde la conversación. Hay también pasos manuales completos en PUBLICACION.md.
+4. GitHub ya está conectado y la aplicación está publicada; ahora continúa con Copilot y el video.
 
 ## Orden recomendado
 
@@ -27,10 +27,12 @@
 
 La web comercial y su ZIP Cloudflare permanecen separados.
 
-## Cuenta institucional
+## Cuenta institucional y publicación
 
-La conexión de GitHub disponible durante la preparación corresponde a `husebe`. Falta confirmar que el correo UPC esté agregado y verificado en esa cuenta. No se publicará allí hasta resolver esa confirmación.
+Conexión confirmada con Hugosebe y correo UPC. Repositorio público creado y GitHub Pages publicado. No hace falta crear otra cuenta ni volver a subir el ZIP como código.
 
-En GitHub, abre el menú de perfil → Settings → Emails y revisa si aparece tu correo UPC como verificado. Si falta, agrégalo y confirma el enlace que recibas directamente en tu bandeja. No envíes códigos ni contraseñas por chat. Si ya utilizas otra cuenta institucional, indícanos su usuario y cambia la conexión a esa cuenta.
+Repositorio: https://github.com/Hugosebe/sumaq-travel-upc
 
-Referencia de GitHub Education: https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student
+Aplicación: https://hugosebe.github.io/sumaq-travel-upc/
+
+Pendientes: datos del curso, actividades reales con Copilot, capturas y video.
