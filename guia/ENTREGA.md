@@ -1,11 +1,11 @@
 # Entrega final UPC
 
 Estudiante: Hugo Serrano  
-Curso: pendiente  
+Curso: Inteligencia Artificial  
 Sección: pendiente  
-Docente: pendiente  
-Integrantes: pendiente  
-Fecha límite: pendiente
+Docente: Lennin Percy Cenas Vasquez  
+Modalidad: individual · Hugo Serrano  
+Fecha límite: 24 de octubre de 2026
 
 **Proyecto:** Sumaq Way Travel — Explorador de paquetes turísticos.
 
